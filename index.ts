@@ -1,6 +1,6 @@
 'use strict';
 
-function fuzzysearch (needle, haystack) {
+function fuzzysearch (needle:string, haystack:string) {
   var hlen = haystack.length;
   var nlen = needle.length;
   if (nlen > hlen) {
