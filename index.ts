@@ -1,6 +1,6 @@
 'use strict';
 
-function fuzzysearch (needle:string, haystack:string) {
+export default function fuzzysearch (needle:string, haystack:string) {
   var hlen = haystack.length;
   var nlen = needle.length;
   if (nlen > hlen) {
@@ -20,5 +20,3 @@ function fuzzysearch (needle:string, haystack:string) {
   }
   return true;
 }
-
-module.exports = fuzzysearch;
